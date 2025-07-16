@@ -1,0 +1,455 @@
+/* Please insert all your CSS code into this document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+header.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside.one {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 200px;
+  height: calc(100vh - 140px);
+  background: #ffffff;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#wrapper {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  margin-left: 200px;
+  padding: 20px;
+  height: calc(100vh - 140px);
+  overflow-y: auto;
+}
+
+.articles1 article {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: auto; /* Let height adjust to content */
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 10px 0; /* add some padding for spacing */
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px;             /* space between items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;    /* center text in list items */
+}
+
+footer li {
+  font-size: 0.9rem;
+}
+.content-article {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  width: calc(100% - 220px);
+}
+img.body1[src$="two.jpg"] {
+  width: 40%;
+  height: auto; 
+}
+img.body1[src$="one.jpg"] {
+  width: 40%;
+  height: auto; 
+}
+
+#two #wrapper {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+#two aside {
+  float: left;
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#two article {
+  float: left;
+  width: 800px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#two article img {
+  float: left;
+  width: 300px;
+  margin: 10px 20px 10px 0;
+  box-sizing: border-box;
+}
+
+#two #wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+#two #wrapper {
+  position: relative;
+  margin-top: 100px;  /* adjust if your header height differs */
+  margin-bottom: 120px; /* make space for the fixed footer */
+  padding: 0 20px;
+  overflow: auto;
+}
+#two .clear {
+  clear: both;
+}
+#two article.clear {
+  clear: both;
+  float: none;  /* Important: cancel the float */
+  width: 800px; /* Keep same width as other articles */
+  margin-left: 220px; /* same as the left margin for proper alignment */
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  overflow: auto;
+}
+#two header figure {
+  text-align: center; /* Center contents of the figure */
+  margin: 0 auto;     /* Optional: centers the figure itself if it's block */
+}
+
+#two header figure img {
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+  max-width: 100%; /* Responsive scaling */
+  height: auto;
+}
+/* === PAGE THREE STYLES ONLY === */
+#three * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#three body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #000;
+}
+
+#three header {
+  padding: 20px;
+  text-align: center;
+}
+
+#three #wrapper {
+  overflow: auto;
+  padding: 2%;
+}
+
+/* Sidebar */
+#three aside {
+  float: left;
+  width: 20%;
+  padding: 2%;
+}
+
+/* Articles */
+#three article {
+  float: left;
+  width: 76%;
+  margin-left: 2%;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+/* Images inside articles */
+#three article img {
+  float: left;
+  width: 40%;
+  margin: 0 2% 2% 0;
+  height: auto;
+}
+
+/* Footer */
+#three footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#three footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+  #three aside,
+  #three article {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #three article img {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+#three article.clear {
+  clear: both;
+  float: none;
+  width: 76%;
+  margin-left: 22%;
+  margin-top: 2%;
+  padding: 2%;
+}
+#three header figure {
+  text-align: center; /* Center contents of the figure */
+  margin: 0 auto;     /* Optional: centers the figure itself if it's block */
+}
+
+#three header figure img {
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+  max-width: 100%; /* Responsive scaling */
+  height: auto;
+}
+
+#four #wrapper {
+  font-size: 0; /* Removes inline-block whitespace gaps */
+}
+
+#four aside {
+  display: inline-block;
+  width: 20%;
+  padding: 2%;
+  vertical-align: top;
+  font-size: 16px; /* Reset text size inside inline-block */
+  box-sizing: border-box;
+}
+
+#four .content-area {
+  display: inline-block;
+  width: 76%;
+  padding: 2%;
+  vertical-align: top;
+  font-size: 16px; /* Reset text size inside inline-block */
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Each article fills the full width of the content area and stacks */
+#four article {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/* Make images responsive and centered */
+#four article figure {
+  text-align: center;
+  margin: 1em 0;
+}
+
+#four article figure img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+#five .gallery {
+  font-size: 0; /* Removes inline-block whitespace */
+  text-align: center;
+  padding: 2em;
+}
+
+#five .gallery figure {
+  display: inline-block;
+  width: 200px;
+  margin: 1em;
+  padding: 0;
+  font-size: 1rem; /* Reset font size inside the figure */
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+#five .gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  box-shadow: 10px 10px lightblue;
+}
+
+#five .gallery figcaption {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #333;
+  text-align: center;
+}
+#five .banner-img {
+  max-width: 100%;
+  width: 60%; /* adjust this as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center the image */
+}
+
+#five .gallery figure {
+  position: relative; /* needed for absolute positioning of figcaption */
+  display: inline-block;
+  width: 200px;
+  margin: 1em;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+#five .gallery figure img {
+  width: 100%;
+  height: 240px; /* fix height */
+  object-fit: cover;
+  display: block;
+}
+
+#five .gallery figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark overlay */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* so it doesn’t block hover */
+}
+
+#five .gallery figure:hover figcaption {
+  opacity: 1;
+  pointer-events: auto; /* enable interaction on hover */
+}
+body > header:first-of-type,
+body > footer:first-of-type {
+  background:
+    linear-gradient(45deg, #92baac 45px, transparent 45px) 64px 64px,
+    linear-gradient(45deg, #92baac 45px, transparent 45px, transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px, #92baac 68px, #92baac 113px, transparent 113px, transparent 158px, #92baac 158px);
+  background-color: #e1ebbd;
+  background-size: 128px 128px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manufacturing Consent", serif;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
