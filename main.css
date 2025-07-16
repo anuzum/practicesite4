@@ -64,24 +64,24 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: auto; /* Let height adjust to content */
+  height: auto; 
   width: 100%;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  padding: 10px 0; /* add some padding for spacing */
+  padding: 10px 0; 
 }
 
 footer ul {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  gap: 10px;             /* space between items vertically */
+  flex-direction: column; 
+  gap: 10px;             
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;    /* center text in list items */
+  text-align: center;   
 }
 
 footer li {
@@ -147,8 +147,8 @@ img.body1[src$="one.jpg"] {
 
 #two #wrapper {
   position: relative;
-  margin-top: 100px;  /* adjust if your header height differs */
-  margin-bottom: 120px; /* make space for the fixed footer */
+  margin-top: 100px;  
+  margin-bottom: 120px; 
   padding: 0 20px;
   overflow: auto;
 }
@@ -157,27 +157,27 @@ img.body1[src$="one.jpg"] {
 }
 #two article.clear {
   clear: both;
-  float: none;  /* Important: cancel the float */
-  width: 800px; /* Keep same width as other articles */
-  margin-left: 220px; /* same as the left margin for proper alignment */
+  float: none;  
+  width: 800px; 
+  margin-left: 220px; 
   padding: 20px;
   background-color: #ffffff;
   box-sizing: border-box;
   overflow: auto;
 }
 #two header figure {
-  text-align: center; /* Center contents of the figure */
-  margin: 0 auto;     /* Optional: centers the figure itself if it's block */
+  text-align: center; 
+  margin: 0 auto;     
 }
 
 #two header figure img {
   display: inline-block;
   float: none;
   margin: 0 auto;
-  max-width: 100%; /* Responsive scaling */
+  max-width: 100%; 
   height: auto;
 }
-/* === PAGE THREE STYLES ONLY === */
+
 #three * {
   box-sizing: border-box;
   margin: 0;
@@ -216,7 +216,7 @@ img.body1[src$="one.jpg"] {
   padding: 2%;
 }
 
-/* Images inside articles */
+
 #three article img {
   float: left;
   width: 40%;
@@ -224,7 +224,7 @@ img.body1[src$="one.jpg"] {
   height: auto;
 }
 
-/* Footer */
+
 #three footer {
   clear: both;
   text-align: center;
@@ -241,7 +241,7 @@ img.body1[src$="one.jpg"] {
   gap: 20px;
 }
 
-/* Responsive tweaks for smaller screens */
+
 @media (max-width: 768px) {
   #three aside,
   #three article {
@@ -265,20 +265,20 @@ img.body1[src$="one.jpg"] {
   padding: 2%;
 }
 #three header figure {
-  text-align: center; /* Center contents of the figure */
-  margin: 0 auto;     /* Optional: centers the figure itself if it's block */
+  text-align: center; 
+  margin: 0 auto;     
 }
 
 #three header figure img {
   display: inline-block;
   float: none;
   margin: 0 auto;
-  max-width: 100%; /* Responsive scaling */
+  max-width: 100%; 
   height: auto;
 }
 
 #four #wrapper {
-  font-size: 0; /* Removes inline-block whitespace gaps */
+  font-size: 0; 
 }
 
 #four aside {
@@ -286,7 +286,7 @@ img.body1[src$="one.jpg"] {
   width: 20%;
   padding: 2%;
   vertical-align: top;
-  font-size: 16px; /* Reset text size inside inline-block */
+  font-size: 16px; 
   box-sizing: border-box;
 }
 
@@ -295,18 +295,18 @@ img.body1[src$="one.jpg"] {
   width: 76%;
   padding: 2%;
   vertical-align: top;
-  font-size: 16px; /* Reset text size inside inline-block */
+  font-size: 16px; 
   box-sizing: border-box;
   background: #fff;
 }
 
-/* Each article fills the full width of the content area and stacks */
+
 #four article {
   width: 100%;
   margin-bottom: 2em;
 }
 
-/* Make images responsive and centered */
+
 #four article figure {
   text-align: center;
   margin: 1em 0;
@@ -319,7 +319,7 @@ img.body1[src$="one.jpg"] {
 }
 
 #five .gallery {
-  font-size: 0; /* Removes inline-block whitespace */
+  font-size: 0; 
   text-align: center;
   padding: 2em;
 }
@@ -329,7 +329,7 @@ img.body1[src$="one.jpg"] {
   width: 200px;
   margin: 1em;
   padding: 0;
-  font-size: 1rem; /* Reset font size inside the figure */
+  font-size: 1rem; 
   box-sizing: border-box;
   vertical-align: top;
 }
@@ -351,14 +351,14 @@ img.body1[src$="one.jpg"] {
 }
 #five .banner-img {
   max-width: 100%;
-  width: 60%; /* adjust this as needed */
+  width: 60%; 
   height: auto;
   display: block;
-  margin: 0 auto; /* center the image */
+  margin: 0 auto; 
 }
 
 #five .gallery figure {
-  position: relative; /* needed for absolute positioning of figcaption */
+  position: relative; 
   display: inline-block;
   width: 200px;
   margin: 1em;
@@ -370,7 +370,7 @@ img.body1[src$="one.jpg"] {
 
 #five .gallery figure img {
   width: 100%;
-  height: 240px; /* fix height */
+  height: 240px;
   object-fit: cover;
   display: block;
 }
@@ -381,7 +381,7 @@ img.body1[src$="one.jpg"] {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark overlay */
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -390,12 +390,12 @@ img.body1[src$="one.jpg"] {
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* so it doesn’t block hover */
+  pointer-events: none; 
 }
 
 #five .gallery figure:hover figcaption {
   opacity: 1;
-  pointer-events: auto; /* enable interaction on hover */
+  pointer-events: auto; 
 }
 body > header:first-of-type,
 body > footer:first-of-type {
@@ -410,21 +410,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Manufacturing Consent", serif;
 }
 
-/* The side navigation menu */
+
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
   left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
 }
 
-/* The navigation menu links */
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -434,12 +434,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #main {
   transition: margin-left .5s;
   padding: 20px;
