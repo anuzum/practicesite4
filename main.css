@@ -1,455 +1,301 @@
-/* Please insert all your CSS code into this document */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Global Modifications */
 
-body {
-  font-family: sans-serif;
-  color: #000;
-  background-color: #fff;
-}
+h1 {
+	padding: .3em .7em 2em;
+	}
 
-header.title {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 80px;
-  width: 100%;
-  background: #fff;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-aside.one {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  width: 200px;
-  height: calc(100vh - 140px);
-  background: #ffffff;
-  padding: 20px;
-  overflow-y: auto;
-}
-
-#wrapper {
-  position: relative;
-  margin-top: 80px;
-  margin-bottom: 60px;
-  margin-left: 200px;
-  padding: 20px;
-  height: calc(100vh - 140px);
-  overflow-y: auto;
-}
-
-.articles1 article {
-  background: #fff;
-  padding: 20px;
-  margin-bottom: 30px;
-  overflow: auto;
-}
+h2 {
+	padding: .5em;
+	text-align: left;
+	}
 
 .banner {
-  max-width: 100%;
-  height: auto;
-  max-height: 200px;
-  display: block;
-  margin-bottom: 10px;
-}
+	display: block;
+	margin: auto;
+	width: 98%;
+	}
 
+header.title {
+	position: fixed;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	float: none;
+	z-index: 1000;
+	}
+	
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: auto; 
-  width: 100%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  padding: 10px 0; 
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background: white;
+	text-align: center;
+	list-style-position: inside;
+	}
+
+#wrapper {
+	margin: 80px 0 105px 0;
+	}
+
+article {
+	float: none;
+	}
+
+article p:last-of-type {
+	padding: 0 0 2em;
+	}
+
+
+
+/* Modifications to Page One / Fixed Position Layout */
+aside.one {
+	position: fixed;
+	left: 0;
+	top: 100px;          
+	width: 180px;
+	padding: 0 0.5em;
+	bottom: 0;
+	overflow-y: auto;
 }
 
-footer ul {
-  display: flex;
-  flex-direction: column; 
-  gap: 10px;             
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;   
+div.articles1 {
+	position: fixed;
+	left: 180px;         
+	top: 100px;           
+	width: 720px;
+	height: calc(100% - 100px); 
+	padding: 0 0.3em;
+	overflow: auto;
 }
 
-footer li {
-  font-size: 0.9rem;
-}
-.content-article {
-  position: absolute;
-  top: 100px;
-  left: 220px;
-  width: calc(100% - 220px);
-}
-img.body1[src$="two.jpg"] {
-  width: 40%;
-  height: auto; 
-}
-img.body1[src$="one.jpg"] {
-  width: 40%;
-  height: auto; 
+img.body1 {
+	width: 280px;
 }
 
-#two #wrapper {
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 0 20px;
-  overflow: hidden;
-}
 
-#two aside {
+/* Modifications to Page Two / Floating Position Layout */
+
+aside.two {
   float: left;
-  width: 200px;
-  padding: 20px;
-  box-sizing: border-box;
+  width: 140px;
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-top: 2em; 
 }
 
-#two article {
-  float: left;
-  width: 800px;
-  margin-left: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  overflow: auto;
-}
-
-#two article img {
-  float: left;
-  width: 300px;
-  margin: 10px 20px 10px 0;
-  box-sizing: border-box;
-}
-
-#two #wrapper::after {
+#wrapper::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.clearfix {
-  overflow: auto;
-  zoom: 1;
-}
-
-#two #wrapper {
-  position: relative;
-  margin-top: 100px;  
-  margin-bottom: 120px; 
-  padding: 0 20px;
-  overflow: auto;
-}
-#two .clear {
-  clear: both;
-}
-#two article.clear {
-  clear: both;
-  float: none;  
-  width: 800px; 
-  margin-left: 220px; 
-  padding: 20px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  overflow: auto;
-}
-#two header figure {
-  text-align: center; 
-  margin: 0 auto;     
-}
-
-#two header figure img {
-  display: inline-block;
-  float: none;
-  margin: 0 auto;
-  max-width: 100%; 
-  height: auto;
-}
-
-#three * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-#three body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  color: #000;
-}
-
-#three header {
-  padding: 20px;
-  text-align: center;
-}
-
-#three #wrapper {
-  overflow: auto;
-  padding: 2%;
-}
-
-/* Sidebar */
-#three aside {
+div.articles2 {
   float: left;
+  width: 720px;
+  min-height: 420px;
+  padding: 10px 25px;
+  overflow: auto;
+}
+
+.left2 {
+  float: left;
+  margin: 12px 30px 12px 0;
+  width: 180px;
+}
+
+.right2 {
+  float: right;
+  margin: 12px 0 12px 30px;
+  width: 180px;
+}
+
+footer {
+  clear: both;
+}
+
+
+/* Modifications to Page Three / Relative Position Layout */
+
+aside.three {
+  float: left;
+  width: 17%;
+  padding-right: 0.8em;
+  padding-top: 2em;
+}
+
+div.articles3 {
+  float: left;
+  min-height: 400px;
+  width: 78%;
+  padding: 0 1.2em;
+  overflow: auto;
+}
+
+.right3 {
+  float: right;
+  width: 28%;
+  margin: 1em 0 1em 1.8em;
+}
+
+.left3 {
+  float: left;
+  width: 28%;
+  margin: 1em 1.8em 1em 0;
+}
+
+#wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  clear: both;
+  padding-top: 2em;
+}
+
+
+/* Modifications to Page Four / Inline-Block Layout */
+
+aside.four {
+	display: inline-block;
+	vertical-align: top;
+	width: 18%;
+	padding: 1em 0.8em 0 0.8em;
+	box-sizing: border-box;
+	min-width: 140px;
+	padding-top: 2em;
+}
+
+div.articles4 {
+	display: inline-block;
+	vertical-align: top;
+	width: 77%;
+	min-height: 420px;
+	padding: 0 1.4em;
+	box-sizing: border-box;
+	min-width: 360px;
+}
+
+.left4 {
+	float: left;
+	width: 26%;
+	margin: 1em 1.5em 1em 0;
+}
+
+.right4 {
+	float: right;
+	width: 26%;
+	margin: 1em 0 1em 1.5em;
+}
+
+/* Modifications to Page Five / Inline-Block Photo Gallery Layout */
+
+aside {
+  display: inline-block;
+  vertical-align: top;
   width: 20%;
-  padding: 2%;
+  min-width: 130px;
+  padding-right: 1em;
+  padding-top: 3em;
 }
 
-/* Articles */
-#three article {
-  float: left;
-  width: 76%;
-  margin-left: 2%;
-  margin-top: 2%;
-  padding: 2%;
+section {
+  display: inline-block;
+  vertical-align: top;
+  width: 77%;
+  padding: 1em;
+  min-width: 350px;
 }
 
-
-#three article img {
-  float: left;
-  width: 40%;
-  margin: 0 2% 2% 0;
-  height: auto;
-}
-
-
-#three footer {
-  clear: both;
+.gallery {
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
 }
 
-#three footer ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
-@media (max-width: 768px) {
-  #three aside,
-  #three article {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  #three article img {
-    float: none;
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
-}
-#three article.clear {
-  clear: both;
-  float: none;
-  width: 76%;
-  margin-left: 22%;
-  margin-top: 2%;
-  padding: 2%;
-}
-#three header figure {
-  text-align: center; 
-  margin: 0 auto;     
-}
-
-#three header figure img {
+.gallery figure {
   display: inline-block;
-  float: none;
-  margin: 0 auto;
-  max-width: 100%; 
-  height: auto;
-}
-
-#four #wrapper {
-  font-size: 0; 
-}
-
-#four aside {
-  display: inline-block;
-  width: 20%;
-  padding: 2%;
+  width: 22%;
+  margin: 1.2%;
+  padding: 0.5em;
+  background-color: #fafafa;
   vertical-align: top;
-  font-size: 16px; 
-  box-sizing: border-box;
 }
 
-#four .content-area {
-  display: inline-block;
-  width: 76%;
-  padding: 2%;
-  vertical-align: top;
-  font-size: 16px; 
-  box-sizing: border-box;
-  background: #fff;
-}
-
-
-#four article {
+.gallery figure img {
   width: 100%;
-  margin-bottom: 2em;
-}
-
-
-#four article figure {
-  text-align: center;
-  margin: 1em 0;
-}
-
-#four article figure img {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-}
-
-#five .gallery {
-  font-size: 0; 
-  text-align: center;
-  padding: 2em;
-}
-
-#five .gallery figure {
-  display: inline-block;
-  width: 200px;
-  margin: 1em;
-  padding: 0;
-  font-size: 1rem; 
-  box-sizing: border-box;
-  vertical-align: top;
-}
-
-#five .gallery img {
-  width: 100%;
-  height: 240px;
+  height: 140px;
   object-fit: cover;
   object-position: center;
   display: block;
-  box-shadow: 10px 10px lightblue;
+  margin: 10px 0 0 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-#five .gallery figcaption {
+.gallery figure img:hover {
+  transform: scale(1.05);
+}
+
+.gallery figure figcaption {
   margin-top: 0.5em;
   font-size: 0.9em;
-  color: #333;
-  text-align: center;
-}
-#five .banner-img {
-  max-width: 100%;
-  width: 60%; 
-  height: auto;
-  display: block;
-  margin: 0 auto; 
+  color: #444;
 }
 
-#five .gallery figure {
-  position: relative; 
-  display: inline-block;
-  width: 200px;
-  margin: 1em;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1rem;
-  vertical-align: top;
+section section figure {
+  position: relative;
 }
 
-#five .gallery figure img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  display: block;
-}
-
-#five .gallery figure figcaption {
+section section figure::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
-  pointer-events: none; 
-}
-
-#five .gallery figure:hover figcaption {
-  opacity: 1;
-  pointer-events: auto; 
-}
-body > header:first-of-type,
-body > footer:first-of-type {
-  background:
-    linear-gradient(45deg, #92baac 45px, transparent 45px) 64px 64px,
-    linear-gradient(45deg, #92baac 45px, transparent 45px, transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
-    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px, #92baac 68px, #92baac 113px, transparent 113px, transparent 158px, #92baac 158px);
-  background-color: #e1ebbd;
-  background-size: 128px 128px;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Manufacturing Consent", serif;
-}
-
-
-.sidenav {
+  top: 0; left: 0;
+  width: 107%;  
   height: 100%; 
-  width: 0; 
-  position: fixed;
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
+  background: rgba(173, 216, 230, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: 5px; 
 }
 
+section section figure:hover::after {
+  opacity: 1;
+}
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+section section img {
   display: block;
-  transition: 0.3s;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px; 
+  transition: transform 0.3s ease;
 }
 
-
-.sidenav a:hover {
-  color: #f1f1f1;
+section section figure:hover img {
+  transform: scale(1.05);
 }
 
+/* CSS3 Pattern */
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+
+.patterned {
+  background-image:
+    radial-gradient(closest-side, transparent 0%, transparent 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%),
+    radial-gradient(closest-side, transparent 0%, transparent 75%, #B6CC66 76%, #B6CC66 85%, #EDFFDB 86%, #EDFFDB 94%, #FFFFFF 95%, #FFFFFF 103%, #D9E6A7 104%, #D9E6A7 112%, #798B3C 113%, #798B3C 121%, #FFFFFF 122%, #FFFFFF 130%, #E0EAD7 131%, #E0EAD7 140%);
+  background-size: 110px 110px;
+  background-color: #C8D3A7;
+  background-position: 0 0, 55px 55px;
 }
 
+/* Google Font Modification */
 
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
+h1, h2, h3 {
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400; /* Or any weight you prefer like 600 or 700 */
+  font-style: normal;
 }
